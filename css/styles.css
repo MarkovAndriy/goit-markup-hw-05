@@ -199,7 +199,8 @@ p {
 .profile-box-img {
   position: absolute;
   top: 224px ;
-  padding: 27px 107px;
+  padding: 27px;
+  width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -451,4 +452,27 @@ p {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--link-color);
+}
+
+.projects-item { 
+  position: relative;
+}
+
+.projects-box {
+  position: absolute;
+  top: 0px;
+  display: none;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.projects-item:hover .projects-box {
+  display: block;
+}
+
+.projects-box-text {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
 }
