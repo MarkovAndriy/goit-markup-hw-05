@@ -32,6 +32,7 @@ p {
 }
 .link {
   text-decoration: none;
+  
 }
 .list {
   list-style: none;
@@ -90,6 +91,11 @@ p {
 .icon {
   margin-right: 10px;
 }
+
+.active-link {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .active-link:hover,
 .active-link:focus {
   color: var(--active-color);
@@ -266,6 +272,7 @@ p {
   height: 44px;
   margin-right: 10px;
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cocial-item:last-child {
   margin-right: 0;
@@ -277,6 +284,9 @@ p {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+  
 }
 .cocial-item:hover {
   background-color: var(--active-color);
@@ -310,6 +320,8 @@ p {
   padding: 15px 31px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .customers-list {
   display: flex;
@@ -388,12 +400,14 @@ p {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  
 }
 
 .filters-list-item:not(:first-child) {
   margin-left: 8px;
 }
 .filters-button {
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
