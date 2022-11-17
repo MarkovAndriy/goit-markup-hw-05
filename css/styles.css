@@ -76,15 +76,31 @@ p {
   letter-spacing: 0.02em;
 }
 
-.header-nav .header-list-item::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border-bottom: 4px solid var(--active-color) ;
-  border-radius: 2px;
+.header-list-item {
+  position: relative;
 }
 
+.header-list-item .studio::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 4px solid var(--active-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: -1px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
 
+.header-list-item .portfolio::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 4px solid var(--active-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: -1px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .header-list-link {
   color: var(--main-color);
@@ -547,12 +563,16 @@ p {
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #000000;
+  top: 0;
+  right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  padding: 9px 10px;
+  background-color: var(--white-color);
+}
+
+.modal-icon {
+  color: var(--header-logo-color);
 }
 
 .is-hidden {
